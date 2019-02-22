@@ -4,7 +4,6 @@ const images =  [
     'aurelia.svg',
     'backbone.svg',
     'ember.svg',
-    'js-badge.svg',
     'react.svg',
     'vue.svg'
 ];
@@ -17,7 +16,7 @@ images.forEach(img => {
             <img class="front-face" src="img/${img}">
             <img class="back-face" src="img/js-badge.svg">
         </div>
-    `
+    `;
 });
 
 cardBoard.innerHTML = cardHTML + cardHTML;
@@ -26,3 +25,8 @@ cardBoard.innerHTML = cardHTML + cardHTML;
 
 const cards = document.querySelectorAll('.memoria-card');
 
+function flipCard(){
+    this.classList.add('flip');
+}
+
+cards.forEach(card => card.addEventListener('click', flipCard));
