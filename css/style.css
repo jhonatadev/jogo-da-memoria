@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background: #e4c515;
+}
+
+#cardboard{
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.memoria-card{
+    width: calc(25% - 10px);
+    height: 33%;
+    margin: 5px;
+    position: relative;
+}
+
+.memoria-card:active{
+    transform: scale(0.97);
+}
+.memoria-card.flip{
+    transform: rotate(180deg);
+}
+
+.front-face, .back-face{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: #675a10;
+    position: absolute;
+}
