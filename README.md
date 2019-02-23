@@ -1,6 +1,6 @@
 # :dart: Jogo da Memória - Javascript 
 
-## :computer: Este jogo visa conceitos como:
+:computer: Este jogo visa conceitos como:
 
 ---
   * posicionamento
