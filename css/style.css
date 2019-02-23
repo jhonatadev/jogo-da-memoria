@@ -11,9 +11,10 @@ body{
 }
 
 #cardboard{
-    width: 640px;
-    height: 640px;
+   width: 600px;
+    height: 600px;
     margin: auto;
+    padding-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
 }

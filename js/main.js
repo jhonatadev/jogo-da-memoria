@@ -46,20 +46,34 @@ function flipCard(){
 function verificarCards(){
     let combineCards = primeiroCard.dataset.card === segundoCard.dataset.card;
 
-    !combineCards ? resetarCards(): true;
+    !combineCards ? desabilitarCards(): resetarCards(combineCards);
 }
 
-function resetarCards() {
+function desabilitarCards() {
     trancarCard = true;
 
     setTimeout(() => {        
         primeiroCard.classList.remove('flip');
         segundoCard.classList.remove('flip');
 
-        [primeiroCard, segundoCard, trancarCard] = [null, null, false];
+        resetarCards();
     }, 1000);
+}
+
+(function baralhar() {
+   cards.forEach(card =>{
+       let aleatorio = Math.floor(Math.random() * 12);
+       card.style.order = aleatorio;
+   }) 
+})()
 
 
+function resetarCards(combineCards = false) {
+    if (combineCards) {
+        primeiroCard.removeEventListener('click', flipCard);
+        segundoCard.removeEventListener('click', flipCard);
+    }
+    [primeiroCard, segundoCard, trancarCard] = [null, null, false];
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
