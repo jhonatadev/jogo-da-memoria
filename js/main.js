@@ -25,14 +25,16 @@ cardBoard.innerHTML = cardHTML + cardHTML;
 
 const cards = document.querySelectorAll('.memoria-card');
 let primeiroCard, segundoCard;
+let trancarCard = false;
 
 
 function flipCard(){
+    if (trancarCard) return false;
+
     this.classList.add('flip');
 
     if (!primeiroCard) {
         primeiroCard = this;
-
         return false;
     }
 
@@ -48,9 +50,13 @@ function verificarCards(){
 }
 
 function resetarCards() {
+    trancarCard = true;
+
     setTimeout(() => {        
         primeiroCard.classList.remove('flip');
         segundoCard.classList.remove('flip');
+
+        [primeiroCard, segundoCard, trancarCard] = [null, null, false];
     }, 1000);
 
 
