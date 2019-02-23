@@ -2,22 +2,25 @@
 
 ## :computer: Este jogo visa conceitos como:
 
-```bash
-  posicionamento
+---
+  * posicionamento
   
-  perspectiva
+  * perspectiva
   
-  transições
+  * transições
   
-  flexbox
+  * flexbox
   
-  manipulação de eventos
+  * manipulação de eventos
   
-  timeouts e ternários
+  * timeouts e ternários
   
-  features ES6  
-```
+  * features ES6  
+---
 
-#### Então fique a vontade para implementar o codigo :yum:
 
+🕹 Demo: <a href="https://gamememoria.netlify.com/" target="_blank">Jogo da Memoria</a>
+
+
+#### Então, fique a vontade para implementar o codigo :yum:
 
