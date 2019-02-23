@@ -1,6 +1,6 @@
-# Jogo da Memoria - Javascript
+# :dart: Jogo da Memória - Javascript 
 
-## Este jogo visa conceitos como
+## :computer: Este jogo visa conceitos como:
 
 ```bash
   posicionamento
