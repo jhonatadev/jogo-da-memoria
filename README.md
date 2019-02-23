@@ -19,7 +19,7 @@
 ---
 
 
-🕹 Demo: <a href="https://gamememoria.netlify.com/" target="blank">Jogo da Memoria</a>
+🕹 Demo: <a href="https://gamememoria.netlify.com/" target="_blank">Jogo da Memoria</a>
 
 
 #### Então, fique a vontade para implementar o codigo :yum:
