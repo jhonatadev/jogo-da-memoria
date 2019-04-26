@@ -1,4 +1,4 @@
-# :dart: Jogo da Memória - Javascript 
+# :eyes: Jogo da Memória - Javascript 
 
 :computer: Este jogo visa conceitos como:
 
